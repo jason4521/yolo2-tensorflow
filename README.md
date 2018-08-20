@@ -13,18 +13,18 @@ python coco_eval.py
 ```
 
 <img src="https://github.com/x5675602/yolo2-tensorflow/blob/master/imgs/neta.png" width="400">
-<img src="https://github.com/WojciechMormul/yolo2/blob/master/imgs/netb.png" width="400">
-<img src="https://github.com/WojciechMormul/yolo2/blob/master/imgs/netc.png" width="400">
-<img src="https://github.com/WojciechMormul/yolo2/blob/master/imgs/loss2.png" width="300">
-<img src="https://github.com/WojciechMormul/yolo2/blob/master/imgs/merge.png" width="700">
+<img src="https://github.com/x5675602/yolo2-tensorflow/blob/master/imgs/netb.png" width="400">
+<img src="https://github.com/x5675602/yolo2-tensorflow/blob/master/imgs/netc.png" width="400">
+<img src="https://github.com/x5675602/yolo2-tensorflow/blob/master/imgs/loss2.png" width="300">
+<img src="https://github.com/x5675602/yolo2-tensorflow/blob/master/imgs/merge.png" width="700">
 
 2.Evaluate YOLOv2 model trained with COCO dataset using Tensorflow. Conversion from Darknet to Tensorflow framework done with darkflow project.
 
-<img src="https://github.com/WojciechMormul/yolo2/blob/master/imgs/a2.png" width="400">
-<img src="https://github.com/WojciechMormul/yolo2/blob/master/imgs/a4.png" width="290">
-<img src="https://github.com/WojciechMormul/yolo2/blob/master/imgs/r1.png" width="700">
-<img src="https://github.com/WojciechMormul/yolo2/blob/master/imgs/r2.png" width="700">
-<img src="https://github.com/WojciechMormul/yolo2/blob/master/imgs/r3.png" width="700">
-<img src="https://github.com/WojciechMormul/yolo2/blob/master/imgs/r4.png" width="700">
-<img src="https://github.com/WojciechMormul/yolo2/blob/master/imgs/r5.png" width="700">
+<img src="https://github.com/x5675602/yolo2-tensorflow/blob/master/imgs/a2.png" width="400">
+<img src="https://github.com/x5675602/yolo2-tensorflow/blob/master/imgs/a4.png" width="290">
+<img src="https://github.com/x5675602/yolo2-tensorflow/blob/master/imgs/r1.png" width="700">
+<img src="https://github.com/x5675602/yolo2-tensorflow/blob/master/imgs/r2.png" width="700">
+<img src="https://github.com/x5675602/yolo2-tensorflow/blob/master/imgs/r3.png" width="700">
+<img src="https://github.com/x5675602/yolo2-tensorflow/blob/master/imgs/r4.png" width="700">
+<img src="https://github.com/x5675602/yolo2-tensorflow/blob/master/imgs/r5.png" width="700">
 
