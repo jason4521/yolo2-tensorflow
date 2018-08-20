@@ -9,7 +9,7 @@ tfrecord_path = './data.tfrecord'  # 用于保存tfrecord文件的地址
 
 net_scale = 32
 grid_w, grid_h = 18, 10  # 分别表示在宽度和高度尺度上的网格单元个数
-n_classes = 6  # 此
+n_classes = 6  # 此变量没有使用
 iou_th = 0.7
 in_w, in_h = grid_w*net_scale, grid_h*net_scale
 
