@@ -25,6 +25,9 @@ def read_example(filename, batch_size):
         ''' 读取训练数据集
 	args:
 	    filename: string类型, 表示训练数据集所在的地址
+	return:
+	    image: 图片
+	    label: 标签
 	'''
 	reader = tf.TFRecordReader()
 	filename_queue = tf.train.string_input_producer([filename], num_epochs=None)
