@@ -95,7 +95,7 @@ def roi2label(roi, anchor, raw_w, raw_h, grid_w, grid_h):
 	return label
 
 def onehot(idx, num):
-	'''
+	'''没有使用
 	'''
 	ret = np.zeros([num], dtype=np.float32)
 	ret[idx] = 1.0
