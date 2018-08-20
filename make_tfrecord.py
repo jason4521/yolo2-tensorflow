@@ -45,7 +45,7 @@ def get_grid_cell(roi, raw_w, raw_h, grid_w, grid_h):
 	return grid_x, grid_y
 
 def get_active_anchors(roi, anchors):
-	 
+        '''若roi与anchor之间的roi小于阈值，则anchor为激活状态
 	indxs = []
 	iou_max, index_max = 0, 0
 	for i,a in enumerate(anchors):
