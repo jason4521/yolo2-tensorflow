@@ -9,7 +9,7 @@ data.csv (three columns: filenames, rois, classes - each row contains image file
 ```
 python make_tfrecord.py
 python train.py
-python eval.py
+python coco_eval.py
 ```
 
 <img src="https://github.com/WojciechMormul/yolo2/blob/master/imgs/neta.png" width="400">
