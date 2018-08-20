@@ -61,7 +61,10 @@ def get_active_anchors(roi, anchors):
     return indxs
 
 def read_csv_file(filename):
-
+    '''
+    args:
+        filename: 此文件保存着用于转换为tfrecord文件的图片地址
+    '''
     filenames = []
     rois = []
     classes = []
@@ -71,16 +74,19 @@ def read_csv_file(filename):
         for row in csvdata:
             filenames.append(row['filename'])  # 图片地址
             rois.append(row['rois'])  # 限位框(左上方的坐标以及宽度和高度)
-            classes.append(row['classes'])  # 该图片中，此限位框内的对象所属于的类别
+            classes.append(row['classes'])  # 该图片中，对应限位框内的对象所属于的类别
 
     return filenames, rois, classes
 
 def roi2label(roi, anchor, raw_w, raw_h, grid_w, grid_h):
     '''
     args: 
-        roi:   限位框的左上方的坐标以及它的宽度和高度
-        raw_w: 图片原始的宽度
-        raw_h: 图片原始的高度
+        roi:    限位框的左上方的坐标以及它的宽度和高度
+        anchor: anchor box的宽度和高度
+        raw_w:  图片原始的宽度
+        raw_h:  图片原始的高度
+        grid_w: 在宽度上的网格单元个数
+        grid_h: 在高度上的网格单元个数
     '''
     # 计算限位框的中心
     x_center = roi[0] + roi[2] / 2.0
@@ -139,9 +145,11 @@ def make_record():
                     label[grid_y, grid_x, active_indx] = np.concatenate((anchor_label, [cls], [1.0]))
                 image_raw = img.tostring()
                 label_raw = label.tostring()
+		
                 example = tf.train.Example(features=tf.train.Features(feature={
                         'label': tf.train.Feature(bytes_list=tf.train.BytesList(value=[label_raw])),
                         'image': tf.train.Feature(bytes_list=tf.train.BytesList(value=[image_raw]))}))
+
                 writer.write(example.SerializeToString())
 
 if __name__ == "__main__":
