@@ -70,9 +70,9 @@ def read_csv_file(filename):
 		i=['filename', 'rois', 'classes']
 		csvdata = csv.DictReader(csvfile)
 		for row in csvdata:
-			filenames.append(row['filename'])
-			rois.append(row['rois'])
-			classes.append(row['classes'])
+			filenames.append(row['filename'])  # 图片地址
+			rois.append(row['rois'])  # 限位框
+			classes.append(row['classes'])  # 该图片中，此限位框内的对象所属于的类别
 
 	return filenames, rois, classes
 
