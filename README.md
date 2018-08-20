@@ -12,7 +12,7 @@ python train.py
 python coco_eval.py
 ```
 
-<img src="https://github.com/WojciechMormul/yolo2/blob/master/imgs/neta.png" width="400">
+<img src="https://github.com/x5675602/yolo2-tensorflow/blob/master/imgs/neta.png" width="400">
 <img src="https://github.com/WojciechMormul/yolo2/blob/master/imgs/netb.png" width="400">
 <img src="https://github.com/WojciechMormul/yolo2/blob/master/imgs/netc.png" width="400">
 <img src="https://github.com/WojciechMormul/yolo2/blob/master/imgs/loss2.png" width="300">
