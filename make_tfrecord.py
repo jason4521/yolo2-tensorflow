@@ -95,7 +95,8 @@ def roi2label(roi, anchor, raw_w, raw_h, grid_w, grid_h):
 	return label
 
 def onehot(idx, num):
-	
+	'''
+	'''
 	ret = np.zeros([num], dtype=np.float32)
 	ret[idx] = 1.0
 	
