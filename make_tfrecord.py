@@ -3,12 +3,12 @@ import numpy as np
 import cv2
 import csv
 
-csv_path = './data.csv'
-anchors_path = './anchors.txt'
-tfrecord_path = './data.tfrecord'
+csv_path = './data.csv'  # 此文件给出了用于转换为tfrecord文件的图片地址
+anchors_path = './anchors.txt'  # 读写anchor大小及个数的文件
+tfrecord_path = './data.tfrecord'  # 用于保存tfrecord文件的地址
 
 net_scale = 32
-grid_w, grid_h = 18, 10
+grid_w, grid_h = 18, 10  # 分别表示在宽度和高度尺度上的网格单元个数
 n_classes = 6
 iou_th = 0.7
 in_w, in_h = grid_w*net_scale, grid_h*net_scale
